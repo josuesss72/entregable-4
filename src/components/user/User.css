@@ -1,0 +1,11 @@
+.edit_user {
+	display: flex;
+	gap: 0.3rem;
+	justify-content: center;
+}
+.edit {
+	font-size: 15px;
+}
+.email_user {
+	font-size: 13px;
+}
