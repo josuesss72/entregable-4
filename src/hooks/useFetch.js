@@ -7,13 +7,13 @@ export default function useFetch () {
   const [users, setUsers] = useState()
 
   const getFetch = () => {
-    axios.get('http://users-crud.academlo.tech/users/')
+    axios.get('https://users-crud.academlo.tech/users/')
       .then(res => setUsers(res.data))
       .catch(err => console.error(err))
   } 
 
   const createUser = (data) => {
-    axios.post('http://users-crud.academlo.tech/users/', data)
+    axios.post('https://users-crud.academlo.tech/users/', data)
       .then(res => {
         console.log(res.data)
         getFetch()
@@ -30,7 +30,7 @@ export default function useFetch () {
   }
 
   const deleteUser = (id) => {
-    axios.delete(`http://users-crud.academlo.tech/users/${id}/`)
+    axios.delete(`https://users-crud.academlo.tech/users/${id}/`)
       .then((res)=>{
         console.log(res.data)
         getFetch()
@@ -44,7 +44,7 @@ export default function useFetch () {
   }
   
   const updateUser = (id, data) => {
-    axios.put(`http://users-crud.academlo.tech/users/${id}/`, data)
+    axios.put(`https://users-crud.academlo.tech/users/${id}/`, data)
       .then((res) => {
         console.log(res.data)
         getFetch()
