@@ -78,7 +78,7 @@ const Form = ({createUser, setShowForm, showForm, captureInfoUser, updateUser, s
       </div>
       <div className='form_div'>
         <label className='form_label' htmlFor="password">Password</label>
-        <input className='form_input' id='password' type="text" {...register("password", {required: "this input required"})} />
+        <input className='form_input' id='password' type="password" {...register("password", {required: "this input required"})} />
         <p className='erros_input'>
           <ErrorMessage errors={errors} name="password"/>
         </p>
